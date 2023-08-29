@@ -13,6 +13,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
+import java.awt.*;
 import java.time.Duration;
 
 public class Hooks {
@@ -21,14 +22,16 @@ public class Hooks {
     public static WebDriver driver;
 
     @BeforeSuite
-    public static void setupAll(){
+    public void setupAll(){
         WebDriverManager.chromedriver().setup();
     }
     @BeforeTest
     public void setup(){
 
         options = new ChromeOptions();
-        //options.addArguments("--headless=new");
+        if(FrameworkConstants.isHeadless){
+            options.addArguments("--headless=new");
+        }
         options.addArguments("start-maximized");
         driver = new ChromeDriver(options);
         //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(FrameworkConstants.TIMEOUT));

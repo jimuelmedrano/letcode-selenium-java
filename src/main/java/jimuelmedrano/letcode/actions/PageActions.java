@@ -11,22 +11,37 @@ import java.time.Duration;
 public class PageActions {
 
     public static void click(WebDriver driver, By element){
-        waitUntil(driver,element).click();
+        getElement(driver,element).click();
     };
 
     public static void inputText(WebDriver driver, By element, String text){
-        waitUntil(driver,element).sendKeys(text);
+        getElement(driver,element).sendKeys(text);
     };
 
     public static void sendKeys(WebDriver driver, By element, Keys keys){
-        waitUntil(driver,element).sendKeys(keys);
+        getElement(driver,element).sendKeys(keys);
     };
 
     public static String getText(WebDriver driver, By element){
-        return waitUntil(driver,element).getText();
+        return getElement(driver,element).getText();
     };
 
-    static WebElement waitUntil(WebDriver driver, By element){
+    public static String getValue(WebDriver driver, By element){
+        return getElement(driver,element).getAttribute("value");
+    };
+
+    public static boolean isEnabled(WebDriver driver, By element){
+        return PageActions.getElement(driver,element).isEnabled();
+    };
+
+    public static boolean isReadonly(WebDriver driver, By element){
+        String readonly = PageActions.getElement(driver,element).getAttribute("readonly");
+        if(readonly != null && readonly.equals("true")){
+            return true;
+        }else{return false;}
+    };
+
+    public static WebElement getElement(WebDriver driver, By element){
         WebElement webElement= driver.findElement(element);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(d -> webElement.isDisplayed());
