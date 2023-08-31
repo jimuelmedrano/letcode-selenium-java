@@ -1,9 +1,7 @@
 package jimuelmedrano.letcode.actions;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -12,6 +10,13 @@ public class PageActions {
 
     public static void click(WebDriver driver, By element){
         getElement(driver,element).click();
+    };
+
+    public static void clickAndHold(WebDriver driver, By element){
+        WebElement elm = getElement(driver,element);
+        new Actions(driver)
+                .clickAndHold(elm)
+                .perform();
     };
 
     public static void inputText(WebDriver driver, By element, String text){
@@ -39,6 +44,20 @@ public class PageActions {
         if(readonly != null && readonly.equals("true")){
             return true;
         }else{return false;}
+    };
+
+    public static Point getLocation(WebDriver driver, By element){
+        return getElement(driver,element).getLocation();
+    };
+
+    public static String getColor(WebDriver driver, By element){
+        //returns RGBA value
+        return getElement(driver,element).getCssValue("color");
+    };
+
+    public static Dimension getSize(WebDriver driver, By element){
+        //returns RGBA value
+        return getElement(driver,element).getSize();
     };
 
     public static WebElement getElement(WebDriver driver, By element){
