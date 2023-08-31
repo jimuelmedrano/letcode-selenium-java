@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="LetcodeTestSuite">
+<!-- <test name="Input" preserve-order="true" thread-count="10" parallel="methods"> -->
+    <test name="Input" preserve-order="true">
+        <classes>
+            <class name="jimuelmedrano.letcode.tests.InputTest"/>
+        </classes>
+    </test>
+</suite>
