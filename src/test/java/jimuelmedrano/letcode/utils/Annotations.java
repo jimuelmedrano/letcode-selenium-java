@@ -20,6 +20,7 @@ public class Annotations {
     }
     @AfterSuite
     public void afterALl() {
+        ds.driver.quit();
         System.out.println("Test Done");
         //TODO: print difference of start and end time to get run time
     }

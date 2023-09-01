@@ -5,6 +5,7 @@
         <classes>
             <class name="jimuelmedrano.letcode.tests.InputTest"/>
             <class name="jimuelmedrano.letcode.tests.ButtonTest"/>
+            <class name="jimuelmedrano.letcode.tests.DropdownTest"/>
         </classes>
     </test>
 </suite>

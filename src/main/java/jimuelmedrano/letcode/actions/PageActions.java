@@ -2,9 +2,11 @@ package jimuelmedrano.letcode.actions;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
 public class PageActions {
 
@@ -58,6 +60,35 @@ public class PageActions {
     public static Dimension getSize(WebDriver driver, By element){
         //returns RGBA value
         return getElement(driver,element).getSize();
+    };
+
+    public static void selectByVisibleText(WebDriver driver, By element,String text){
+        Select select = new Select(getElement(driver,element));
+        select.selectByVisibleText(text);
+    };
+
+    public static void selectByValue(WebDriver driver, By element,String text){
+        Select select = new Select(getElement(driver,element));
+        select.selectByValue(text);
+    };
+
+    public static void selectByIndex(WebDriver driver, By element,int index){
+        Select select = new Select(getElement(driver,element));
+        select.selectByIndex(index);
+    };
+
+    public static List<WebElement> getAllSelectOptions(WebDriver driver, By element){
+        List<WebElement> selectedOptionList;
+        Select select = new Select(getElement(driver,element));
+        selectedOptionList = select.getOptions();
+        return selectedOptionList;
+    };
+
+    public static List<WebElement> getSelectedOptions(WebDriver driver, By element){
+        List<WebElement> selectedOptionList;
+        Select select = new Select(getElement(driver,element));
+        selectedOptionList = select.getAllSelectedOptions();
+        return selectedOptionList;
     };
 
     public static WebElement getElement(WebDriver driver, By element){
