@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.time.Duration;
+
 public class DriverSetup {
     public WebDriver driver;
     public void setUpDriver() {
@@ -22,5 +24,6 @@ public class DriverSetup {
         }
         options.addArguments("--start-maximized");
         driver = new ChromeDriver(options);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
     }
 }
