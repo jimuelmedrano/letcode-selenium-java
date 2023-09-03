@@ -8,6 +8,7 @@
             <class name="jimuelmedrano.letcode.tests.DropdownTest"/>
             <class name="jimuelmedrano.letcode.tests.AlertTest"/>
             <class name="jimuelmedrano.letcode.tests.FrameTest"/>
+            <class name="jimuelmedrano.letcode.tests.WindowTest"/>
         </classes>
     </test>
 </suite>

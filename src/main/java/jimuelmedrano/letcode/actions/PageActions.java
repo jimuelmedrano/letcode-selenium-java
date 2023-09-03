@@ -101,6 +101,17 @@ public class PageActions {
         je.executeScript("arguments[0].scrollIntoView();",elm);
     };
 
+    public static void switchWindow(WebDriver driver){
+        //This will switch the current window to another window, works like a toggle between 2 windows
+        String originalWindow = driver.getWindowHandle();
+        for (String windowHandle : driver.getWindowHandles()) {
+            if(!originalWindow.contentEquals(windowHandle)) {
+                driver.switchTo().window(windowHandle);
+                break;
+            }
+        }
+    };
+
     public static WebElement getElement(WebDriver driver, By element){
         WebElement webElement= driver.findElement(element);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
