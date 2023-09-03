@@ -19,7 +19,7 @@ public class InputTest extends Annotations {
 
     @Test(priority = 1)
     public void inputFullName() throws InterruptedException{
-        PageActions.inputText(ds.driver,InputPage.fullNameInput, FrameworkConstants.INPUT_FULL_NAME);
+        PageActions.inputText(ds.driver,InputPage.fullNameInput, FrameworkConstants.FULL_NAME);
     }
 
     @Test(priority = 2)

@@ -91,6 +91,16 @@ public class PageActions {
         return selectedOptionList;
     };
 
+    public static void switchFrame(WebDriver driver, By element){
+        driver.switchTo().frame(getElement(driver,element));
+    };
+    public static void scrollToElement(WebDriver driver, By element){
+        WebElement elm = getElement(driver,element);
+        //Use JS Executor to scroll into view of element
+        JavascriptExecutor je = (JavascriptExecutor) driver;
+        je.executeScript("arguments[0].scrollIntoView();",elm);
+    };
+
     public static WebElement getElement(WebDriver driver, By element){
         WebElement webElement= driver.findElement(element);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));

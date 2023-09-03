@@ -42,9 +42,9 @@ public class AlertTest extends Annotations {
     public void inputAlertText() throws InterruptedException{
         PageActions.click(ds.driver, AlertPage.promptAlert);
         Alert alert = ds.driver.switchTo().alert();
-        alert.sendKeys("Renzo");
+        alert.sendKeys(FrameworkConstants.FIRST_NAME);
         alert.accept();
-        String expectedText = "Your name is: Renzo";
+        String expectedText = "Your name is: " + FrameworkConstants.FIRST_NAME;
         String resultText = PageActions.getText(ds.driver, AlertPage.inputAlert);
         Assert.assertEquals(resultText,expectedText);
     }
