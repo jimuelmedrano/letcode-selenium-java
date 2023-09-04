@@ -118,6 +118,12 @@ public class PageActions {
         return !elements.isEmpty();
     };
 
+    public static void dragDropElement(WebDriver driver, By dragElement, By dropElement){
+        new Actions(driver)
+                .dragAndDrop(getElement(driver,dragElement), getElement(driver,dropElement))
+                .perform();
+    };
+
     public static WebElement getElement(WebDriver driver, By element){
         WebElement webElement= driver.findElement(element);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
