@@ -112,10 +112,23 @@ public class PageActions {
         }
     };
 
+    public static boolean checkElementExist(WebDriver driver, By element){
+        List<WebElement> elements = driver.findElements(element);
+        //Return true if element exists, else false
+        return !elements.isEmpty();
+    };
+
     public static WebElement getElement(WebDriver driver, By element){
         WebElement webElement= driver.findElement(element);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(d -> webElement.isDisplayed());
+        return webElement;
+    }
+
+    public static List<WebElement> getElements(WebDriver driver, By elements){
+        List<WebElement> webElement= driver.findElements(elements);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(d -> !webElement.isEmpty());
         return webElement;
     }
 }
