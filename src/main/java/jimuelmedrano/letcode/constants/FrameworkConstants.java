@@ -8,4 +8,5 @@ public class FrameworkConstants {
     public static String FIRST_NAME = "Jimuel Renzo";
     public static String LAST_NAME = "Medrano";
     public static String EMAIL = "test@email.com";
+    public static String GITHUB_USERNAME = "jimuelmedrano";
 }

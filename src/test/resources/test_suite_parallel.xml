@@ -9,6 +9,7 @@
             <class name="jimuelmedrano.letcode.tests.AlertTest"/>
             <class name="jimuelmedrano.letcode.tests.FrameTest"/>
             <class name="jimuelmedrano.letcode.tests.WindowTest"/>
+            <class name="jimuelmedrano.letcode.tests.ElementsTest"/>
         </classes>
     </test>
 </suite>
