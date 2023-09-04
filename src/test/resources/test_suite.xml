@@ -10,6 +10,7 @@
             <class name="jimuelmedrano.letcode.tests.FrameTest"/>
             <class name="jimuelmedrano.letcode.tests.WindowTest"/>
             <class name="jimuelmedrano.letcode.tests.ElementsTest"/>
+            <class name="jimuelmedrano.letcode.tests.DragDropTest"/>
         </classes>
     </test>
 </suite>
