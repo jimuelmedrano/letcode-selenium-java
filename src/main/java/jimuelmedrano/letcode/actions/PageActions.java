@@ -124,6 +124,12 @@ public class PageActions {
                 .perform();
     };
 
+    public static void dragDropOffset(WebDriver driver, By dragElement, int offsetX, int offsetY){
+        new Actions(driver)
+                .dragAndDropBy(getElement(driver,dragElement),offsetX,offsetY)
+                .perform();
+    };
+
     public static WebElement getElement(WebDriver driver, By element){
         WebElement webElement= driver.findElement(element);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
