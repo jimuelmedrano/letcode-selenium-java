@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="LetcodeParallel">
 <!-- <test name="Input" preserve-order="true" thread-count="10" parallel="methods"> -->
-    <test name="LetcodePages" thread-count="2" parallel="classes">
+    <test name="LetcodePages" thread-count="3" parallel="classes">
         <classes>
             <class name="jimuelmedrano.letcode.tests.InputTest"/>
             <class name="jimuelmedrano.letcode.tests.ButtonTest"/>
@@ -12,6 +12,7 @@
             <class name="jimuelmedrano.letcode.tests.ElementsTest"/>
             <class name="jimuelmedrano.letcode.tests.DragDropTest"/>
             <class name="jimuelmedrano.letcode.tests.SliderTest"/>
+            <class name="jimuelmedrano.letcode.tests.FormTest"/>
         </classes>
     </test>
 </suite>

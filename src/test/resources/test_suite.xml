@@ -12,6 +12,7 @@
             <class name="jimuelmedrano.letcode.tests.ElementsTest"/>
             <class name="jimuelmedrano.letcode.tests.DragDropTest"/>
             <class name="jimuelmedrano.letcode.tests.SliderTest"/>
+            <class name="jimuelmedrano.letcode.tests.FormTest"/>
         </classes>
     </test>
 </suite>
