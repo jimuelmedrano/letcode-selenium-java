@@ -6,6 +6,13 @@
             <class name="jimuelmedrano.letcode.tests.InputTest"/>
             <class name="jimuelmedrano.letcode.tests.ButtonTest"/>
             <class name="jimuelmedrano.letcode.tests.DropdownTest"/>
+            <class name="jimuelmedrano.letcode.tests.AlertTest"/>
+            <class name="jimuelmedrano.letcode.tests.FrameTest"/>
+            <class name="jimuelmedrano.letcode.tests.WindowTest"/>
+            <class name="jimuelmedrano.letcode.tests.ElementsTest"/>
+            <class name="jimuelmedrano.letcode.tests.DragDropTest"/>
+            <class name="jimuelmedrano.letcode.tests.SliderTest"/>
+            <class name="jimuelmedrano.letcode.tests.FormTest"/>
         </classes>
     </test>
 </suite>
