@@ -66,9 +66,10 @@ You can run the script using the following commands:
 
   
 ## Sample Run
-[<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/42688255/266012912-377039fc-5ddc-4243-b4ee-aacf119c03a5.png" width="50%">](https://www.youtube.com/watch?v=e4OcRuFw47E)
+[<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/42688255/266182473-9b7633de-7302-4ec2-b522-5c3da1c8b57d.png" width="50%">](https://www.youtube.com/watch?v=Q8-iS_Jps-U)
 
-<!-- CONTACT -->
+<!-- CONTACT -->!
+
 ## Contact
 
 LinkedIn - https://www.linkedin.com/in/jimuel-renzo-medrano/
