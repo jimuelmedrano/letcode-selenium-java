@@ -68,7 +68,7 @@ You can run the script using the following commands:
 ## Sample Run
 [<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/42688255/266012912-377039fc-5ddc-4243-b4ee-aacf119c03a5.png" width="50%">](https://www.youtube.com/watch?v=e4OcRuFw47E)
 
-<!-- CONTACT -->!
+<!-- CONTACT -->
 
 ## Contact
 
