@@ -16,7 +16,7 @@
   <p align="center">
     Selenium Java automation script for the letcode website
     <br />
-    <a href="https://github.com/jimuelmedrano/letcode-selenium-java/wiki/Useful-Links-for-Learning-Selenium"><strong>Explore the wiki »</strong></a>
+    <a href="https://github.com/jimuelmedrano/letcode-selenium-java/wiki/"><strong>Explore the wiki »</strong></a>
   </p>
 </div>
 
