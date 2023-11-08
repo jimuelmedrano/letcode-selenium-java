@@ -68,6 +68,9 @@ You can run the script using the following commands:
 ## Sample Run
 [<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/42688255/266012912-377039fc-5ddc-4243-b4ee-aacf119c03a5.png" width="50%">](https://www.youtube.com/watch?v=e4OcRuFw47E)
 
+## Sample Run Report
+![image](https://github.com/jimuelmedrano/letcode-selenium-java/assets/42688255/be8f3d3f-8005-4d5c-acb5-68ac42cf2e4a)
+
 <!-- CONTACT -->
 
 ## Contact
